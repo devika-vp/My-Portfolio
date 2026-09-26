@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ash Help Portal, a superhero-themed support portal for sharing struggles and requesting help.">
+  <title>Ash Help Portal | Devika V P</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f5a623'/><text x='50%' y='68%' font-size='65' font-weight='bold' font-family='Georgia, serif' text-anchor='middle' fill='%23000000'>D</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="solo-trip-page">
+
+  <!-- 🔝 NAVBAR & SCROLL PROGRESS -->
+  <header class="navbar">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Devika V P Home">
+        <span class="logo-badge">D</span>
+        <span>Devika V P</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#certifications">Certifications</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html#contact" class="nav-cta-btn">Contact Me</a>
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Toggle light or dark theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="solo-hero">
+      <div class="solo-hero-copy">
+        <p class="solo-eyebrow">★ &nbsp; A place to speak up &nbsp; • &nbsp; Support when you need it</p>
+        <h1>Ash Help Portal</h1>
+        <p class="solo-lead">A superhero-themed support portal built around empathy and asking for help.</p>
+        <p class="solo-intro">
+          Ash helps people express what they are going through, connect with an empathetic virtual assistant,
+          and submit a help request when they need urgent assistance.
+        </p>
+        <a class="solo-primary-button" href="https://ash-help-portal.onrender.com/" target="_blank" rel="noopener noreferrer">
+          <span>★</span> Visit Live Portal <span>&rarr;</span>
+        </a>
+      </div>
+      <div class="solo-hero-art">
+        <img src="images/Ash Portal.png" alt="Preview of the Ash Help Portal interface">
+        <span class="solo-hero-note">You deserve to be heard</span>
+      </div>
+    </section>
+
+    <section class="solo-detail-grid" aria-label="Project details">
+      <article class="solo-detail-card">
+        <div class="solo-icon">🤍</div>
+        <div>
+          <h2>Why Ash Exists</h2>
+          <p>Reaching out can feel difficult. Ash offers a welcoming place to put struggles into words and find a next step toward support.</p>
+        </div>
+      </article>
+
+      <article class="solo-detail-card">
+        <div class="solo-icon">★</div>
+        <div>
+          <h2>Ways to Get Support</h2>
+          <ul>
+            <li>Express what you are going through.</li>
+            <li>Talk with an empathetic virtual assistant.</li>
+            <li>Submit a request for urgent assistance.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="solo-detail-card">
+        <div class="solo-icon">⚙️</div>
+        <div>
+          <h2>Under the Hood</h2>
+          <ul>
+            <li>Flask-powered Python web application.</li>
+            <li>SQLite stores submitted help requests.</li>
+            <li>Email notifications use SMTP or a FormSubmit fallback.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="solo-detail-card">
+        <div class="solo-icon">⚠️</div>
+        <div>
+          <h2>Urgent Situations</h2>
+          <p>Urgent requests are saved and sent to the support team by email. If someone is in immediate danger, they should contact local emergency services as well.</p>
+        </div>
+      </article>
+    </section>
+
+    <div class="solo-footer-mark">
+      ★ &nbsp; SPEAK UP &nbsp; • &nbsp; FIND SUPPORT &nbsp; • &nbsp; TAKE THE NEXT STEP &nbsp;
+    </div>
+  </main>
+
+  <!-- 🔝 BACK TO TOP BUTTON -->
+  <button class="back-to-top-btn" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-badge">D</span>
+          <span class="footer-brand">Devika V P</span>
+        </div>
+        <div class="footer-contact">
+          <a href="mailto:devikavp14@email.com">✉ devikavp14@email.com</a>
+          <span>📍 Thrissur, Kerala</span>
+          <a href="https://github.com/devika-vp" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/devika-v-p-40b480354" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div class="footer-copyright">
+          Created By @devika.vp • All Rights Reserved © <span id="year">2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

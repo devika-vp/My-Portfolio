@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Instruction Execution Cycle Simulator by Devika V P.">
+  <title>RISC Processor Simulator | Devika V P</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f5a623'/><text x='50%' y='68%' font-size='65' font-weight='bold' font-family='Georgia, serif' text-anchor='middle' fill='%23000000'>D</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="solo-trip-page">
+
+  <!-- 🔝 NAVBAR & SCROLL PROGRESS -->
+  <header class="navbar">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Devika V P Home">
+        <span class="logo-badge">D</span>
+        <span>Devika V P</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#certifications">Certifications</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html#contact" class="nav-cta-btn">Contact Me</a>
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Toggle light or dark theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="solo-hero">
+      <div class="solo-hero-copy">
+        <p class="solo-eyebrow">⚙️ &nbsp; Understand Systems &nbsp; • &nbsp; Execute Precisely</p>
+        <h1>RISC Simulator</h1>
+        <p class="solo-lead">Interactive single-cycle processor execution simulator</p>
+        <p class="solo-intro">This Computer Organization project turns the instruction execution cycle into an interactive web experience. It models how selected RISC instructions move through the IF, ID, EX, MEM, and WB stages.</p>
+        <a class="solo-primary-button" href="projects.html">
+          <span>◉</span> View All Projects <span>&rarr;</span>
+        </a>
+      </div>
+      <div class="solo-hero-art">
+        <img src="images/Risc.png" alt="RISC Processor Simulator preview">
+        <span class="solo-hero-note">Think in cycles</span>
+      </div>
+    </section>
+
+    <section class="solo-detail-grid" aria-label="Project details">
+      <article class="solo-detail-card">
+        <div class="solo-icon">⚙️</div>
+        <div>
+          <h2>Project Overview</h2>
+          <p>This Computer Organization project turns the instruction execution cycle into an interactive web experience. It models how selected RISC instructions move through the IF, ID, EX, MEM, and WB stages.</p>
+        </div>
+      </article>
+
+      <article class="solo-detail-card">
+        <div class="solo-icon">&lt;/&gt;</div>
+        <div>
+          <h2>Technologies Used</h2>
+          <ul>
+            <li><strong>Backend:</strong> Python and Flask</li>
+            <li><strong>Frontend:</strong> JavaScript, HTML, and CSS</li>
+            <li><strong>Architecture:</strong> Single-cycle RISC instruction model</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="solo-detail-card">
+        <div class="solo-icon">⭐</div>
+        <div>
+          <h2>Key Features</h2>
+          <ul>
+            <li>Simulates ADD, SUB, AND, OR, SLT, and BEQ instructions.</li>
+            <li>Generates 32-bit machine code for supported instructions.</li>
+            <li>Reports CPI, IPC, throughput, and stall cycles.</li>
+            <li>Provides validation and diagnostic feedback.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="solo-detail-card">
+        <div class="solo-icon">💡</div>
+        <div>
+          <h2>What I Learned</h2>
+          <ul>
+            <li>Translating processor architecture into interactive software.</li>
+            <li>Representing instruction stages as a clear user flow.</li>
+            <li>Using measurable feedback to explain performance.</li>
+            <li>Designing validation for technical input.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <div class="solo-footer-mark">
+      ⚙️ &nbsp; TRACE &nbsp; • &nbsp; EXECUTE &nbsp; • &nbsp; ANALYZE &nbsp;
+    </div>
+  </main>
+
+  <!-- 🔝 BACK TO TOP BUTTON -->
+  <button class="back-to-top-btn" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-badge">D</span>
+          <span class="footer-brand">Devika V P</span>
+        </div>
+        <div class="footer-contact">
+          <a href="mailto:devikavp14@email.com">✉ devikavp14@email.com</a>
+          <span>📍 Thrissur, Kerala</span>
+          <a href="https://github.com/devika-vp" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/devika-v-p-40b480354" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div class="footer-copyright">
+          Created By @devika.vp • All Rights Reserved © <span id="year">2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

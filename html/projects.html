@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Devika V P — Web applications, Flask portals, RISC processors, and productivity tools.">
+  <title>Projects | Devika V P</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f5a623'/><text x='50%' y='68%' font-size='65' font-weight='bold' font-family='Georgia, serif' text-anchor='middle' fill='%23000000'>D</text></svg>">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Open Graph & Social Share Card Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects | Devika V P">
+  <meta property="og:description" content="Explore web applications, Python Flask portals, RISC processor simulators, and productivity tools by Devika V P.">
+  <meta property="og:image" content="images/SoloTripPlanner.png">
+  <meta property="og:url" content="https://devika-vp.github.io/projects.html">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects | Devika V P">
+  <meta name="twitter:description" content="Explore web applications, Python Flask portals, RISC processor simulators, and productivity tools by Devika V P.">
+  <meta name="twitter:image" content="images/SoloTripPlanner.png">
+</head>
+<body class="solo-trip-page">
+
+  <!-- 🔝 NAVBAR & SCROLL PROGRESS -->
+  <header class="navbar">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Devika V P Home">
+        <span class="logo-badge">D</span>
+        <span>Devika V P</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#certifications">Certifications</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html#contact" class="nav-cta-btn">Contact Me</a>
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Toggle light or dark theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <div class="scene">
+    <div class="container">
+      <div class="card">
+
+        <h1 class="main-title">My Projects</h1>
+        <p class="subtitle">
+          A collection of my academic and web development work
+        </p>
+
+        <!-- CATEGORY FILTERS -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all" type="button">🌟 All Projects</button>
+          <button class="filter-btn" data-filter="web" type="button">🌐 Web Apps</button>
+          <button class="filter-btn" data-filter="python" type="button">🐍 Python &amp; Flask</button>
+          <button class="filter-btn" data-filter="productivity" type="button">⚡ Productivity</button>
+          <button class="filter-btn" data-filter="systems" type="button">⚙️ Systems</button>
+        </div>
+
+        <!-- PROJECT 1 -->
+        <article class="project" data-category="web">
+          <a class="project-link" href="solo-trip.html" aria-label="Open Solo Trip Planner details">
+            <h3>Solo Trip Planner</h3>
+            <p>
+              Web-based application for planning safe and organized solo trips with itinerary and budget features.
+            </p>
+            <p class="project-meta">
+              Web Development • UI/UX • Application Logic
+            </p>
+            <ul class="project-bullets">
+              <li><strong>Tech stack:</strong> HTML • CSS • JavaScript</li>
+              <li><strong>What I did:</strong> Planned user flow, built core pages, and structured itinerary/budget sections.</li>
+              <li><strong>What I learned:</strong> Turning requirements into UI, and keeping features organized and usable.</li>
+            </ul>
+          </a>
+
+          <div class="project-actions">
+            <a href="solo-trip.html" class="btn-card-gold">📄 View Details</a>
+            <a href="https://soloscript2026-tinkherhack.vercel.app/" class="btn-gold-outline" target="_blank" rel="noopener noreferrer">↗ Live Demo</a>
+            <a href="https://github.com/devika-vp/tink-her-hack-temp" class="btn-gold-outline" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project" data-category="python">
+          <a class="project-link" href="ash.html" aria-label="Open Ash Help Portal details">
+            <h3>Ash Help Portal</h3>
+            <p>
+              Superhero-themed support portal where people can share their struggles, connect with an empathetic virtual assistant, and request urgent assistance.
+            </p>
+            <p class="project-meta">
+               Flask • SQLite • Conversational UX
+            </p>
+            <ul class="project-bullets">
+              <li><strong>Core features:</strong> Personal expression, empathetic virtual assistant, and urgent help requests.</li>
+              <li><strong>Request handling:</strong> SQLite storage with email notifications to the support team.</li>
+            </ul>
+          </a>
+
+          <div class="project-actions">
+            <a href="ash.html" class="btn-card-gold">📄 View Details</a>
+            <a href="https://ash-help-portal.onrender.com/" class="btn-gold-outline" target="_blank" rel="noopener noreferrer">↗ Live Portal</a>
+            <a href="https://github.com/devika-vp/ash-help-portal" class="btn-gold-outline" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project" data-category="productivity">
+          <a class="project-link" href="study-tracker.html" aria-label="Open Study Tracker Application details">
+            <h3>Study Tracker Application</h3>
+            <p>
+              Student task and progress tracking application designed to support organized study planning.
+            </p>
+            <p class="project-meta">
+              Productivity • Workflow Design • Student Tools
+            </p>
+            <ul class="project-bullets">
+              <li><strong>Tech stack:</strong> HTML • CSS • JavaScript</li>
+              <li><strong>What I did:</strong> Developed interactive task-management features and user-friendly layouts for study planning.</li>
+              <li><strong>What I learned:</strong> Building productivity features around simple, consistent user actions with AI-assisted development.</li>
+            </ul>
+          </a>
+
+          <div class="project-actions">
+            <a href="study-tracker.html" class="btn-card-gold">📄 View Details</a>
+            <a href="https://smart-study-hub-sigma.vercel.app/" class="btn-gold-outline" target="_blank" rel="noopener noreferrer">↗ Live Demo</a>
+            <a href="https://github.com/devika-vp/Smart_Study_Hub-" class="btn-gold-outline" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 4 -->
+        <article class="project" data-category="systems">
+          <a class="project-link" href="risc-simulator.html" aria-label="Open RISC Processor Simulator details">
+            <h3>Instruction Execution Cycle Simulator</h3>
+            <p>
+              Interactive simulator for a single-cycle RISC processor and its instruction execution cycle.
+            </p>
+            <p class="project-meta">
+              Computer Organization • Simulation • Web Development
+            </p>
+            <ul class="project-bullets">
+              <li><strong>Tech stack:</strong> Python • Flask • JavaScript</li>
+              <li><strong>What I did:</strong> Simulated ADD, SUB, AND, OR, SLT, and BEQ through the IF, ID, EX, MEM, and WB stages.</li>
+              <li><strong>What I learned:</strong> Translating processor architecture concepts into interactive software and measurable performance feedback.</li>
+            </ul>
+          </a>
+
+          <div class="project-actions">
+            <a href="risc-simulator.html" class="btn-card-gold">📄 View Details</a>
+            <a href="https://instruction-execution-cycle-simulat.vercel.app" class="btn-gold-outline" target="_blank" rel="noopener noreferrer">↗ Live Demo</a>
+            <a href="https://github.com/Devikrishna-PS/Instruction-Execution-Cycle-Simulator" class="btn-gold-outline" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+          </div>
+        </article>
+
+        <!-- CTA -->
+        <p style="margin-top: 25px; color: var(--text-muted);">
+          More projects coming soon as I continue building and exploring new technologies.
+        </p>
+
+        <!-- NAVIGATION -->
+        <div style="margin-top: 30px; display: flex; gap: 12px;">
+          <a href="index.html" class="btn-gold-solid">🏠 Home</a>
+          <a href="about.html" class="btn-gold-outline">📄 About</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔝 BACK TO TOP BUTTON -->
+  <button class="back-to-top-btn" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-badge">D</span>
+          <span class="footer-brand">Devika V P</span>
+        </div>
+        <div class="footer-contact">
+          <a href="mailto:devikavp14@email.com">✉ devikavp14@email.com</a>
+          <span>📍 Thrissur, Kerala</span>
+          <a href="https://github.com/devika-vp" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/devika-v-p-40b480354" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div class="footer-copyright">
+          Created By @devika.vp • All Rights Reserved © <span id="year">2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
