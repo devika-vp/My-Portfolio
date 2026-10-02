@@ -163,6 +163,58 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ==========================================
+     6.5. INTERACTIVE CERTIFICATE PREVIEW MODAL
+     ========================================== */
+  const certModal = document.getElementById("certModal");
+  const openCertBtns = document.querySelectorAll(".btn-open-cert-modal");
+  const closeCertBtn = document.getElementById("closeCertModal");
+  const certModalTitle = document.getElementById("certModalTitle");
+  const certModalImg = document.getElementById("certModalImg");
+  const certModalDownload = document.getElementById("certModalDownload");
+
+  if (certModal && certModalImg) {
+    openCertBtns.forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const certTitle = btn.getAttribute("data-cert-title") || "Certificate Preview";
+        const certSrc = btn.getAttribute("data-cert-src");
+
+        if (certSrc) {
+          certModalTitle.textContent = certTitle;
+          certModalImg.src = certSrc;
+          certModalImg.alt = certTitle;
+          if (certModalDownload) {
+            certModalDownload.href = certSrc;
+          }
+          certModal.classList.add("active");
+          document.body.style.overflow = "hidden";
+        }
+      });
+    });
+
+    const closeCertModalFunc = () => {
+      certModal.classList.remove("active");
+      document.body.style.overflow = "";
+    };
+
+    if (closeCertBtn) {
+      closeCertBtn.addEventListener("click", closeCertModalFunc);
+    }
+
+    certModal.addEventListener("click", (e) => {
+      if (e.target === certModal) {
+        closeCertModalFunc();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && certModal.classList.contains("active")) {
+        closeCertModalFunc();
+      }
+    });
+  }
+
+  /* ==========================================
      7. DIRECT EMAIL CONTACT FORM (Web3Forms API)
      ========================================== */
   const contactForm = document.getElementById("contactForm");
@@ -240,5 +292,45 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
   }
+
+  /* ==========================================
+     10. TOAST NOTIFICATION & COPY TO CLIPBOARD
+     ========================================== */
+  function showToast(message, icon = "✨") {
+    let container = document.querySelector(".toast-container");
+    if (!container) {
+      container = document.createElement("div");
+      container.className = "toast-container";
+      document.body.appendChild(container);
+    }
+
+    const toast = document.createElement("div");
+    toast.className = "toast";
+    toast.innerHTML = `<span>${icon}</span> <span>${message}</span>`;
+    container.appendChild(toast);
+
+    requestAnimationFrame(() => {
+      toast.classList.add("show");
+    });
+
+    setTimeout(() => {
+      toast.classList.remove("show");
+      setTimeout(() => {
+        toast.remove();
+      }, 300);
+    }, 3200);
+  }
+
+  const copyBtns = document.querySelectorAll(".btn-copy-email");
+  copyBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const email = btn.getAttribute("data-email") || "devikavp14@email.com";
+      navigator.clipboard.writeText(email).then(() => {
+        showToast("Email copied to clipboard!", "📋");
+      }).catch(() => {
+        showToast("Email address: " + email, "📧");
+      });
+    });
+  });
 
 });

@@ -14,13 +14,13 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="About | Devika V P">
   <meta property="og:description" content="B.Tech Computer Science Engineering student @ Jyothi Engineering College. Skills, education, NPTEL Certification, AIR 8 NEC 2025 achievement, and contact info.">
-  <meta property="og:image" content="images/Avatar.jpg">
+  <meta property="og:image" content="images/profile.png">
   <meta property="og:url" content="https://devika-vp.github.io/about.html">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About | Devika V P">
   <meta name="twitter:description" content="B.Tech Computer Science Engineering student @ Jyothi Engineering College. Skills, education, NPTEL Certification, AIR 8 NEC 2025 achievement, and contact info.">
-  <meta name="twitter:image" content="images/Avatar.jpg">
+  <meta name="twitter:image" content="images/profile.png">
 </head>
 <body class="solo-trip-page">
 
@@ -109,8 +109,20 @@
         <!-- CERTIFICATIONS & ACHIEVEMENTS -->
         <div class="detail-section">
           <h2>Certifications &amp; Achievements</h2>
-          <p style="margin-bottom: 10px;">🏆 <strong>National Entrepreneurship Challenge (NEC) 2025</strong> · E-Cell, IIT Bombay · Advanced Track · <span class="badge-tag">All India Rank 8</span></p>
-          <p>📜 <strong>NPTEL Certification</strong> · NPTEL / Ministry of Education, Govt. of India · <span class="badge-tag">NPTEL Certified</span> <span class="badge-tag">IIT Coursework</span></p>
+          <div style="margin-bottom: 18px;">
+            <p style="margin-bottom: 8px;">🏆 <strong>National Entrepreneurship Challenge (NEC) 2025</strong> · E-Cell, IIT Bombay · Advanced Track · <span class="badge-tag">All India Rank 8</span></p>
+            <div style="display: flex; gap: 10px; margin-top: 6px;">
+              <button type="button" class="btn-cert-view btn-open-cert-modal" data-cert-title="National Entrepreneurship Challenge (NEC) 2025 — Certificate" data-cert-src="images/NEC.png" style="height: 34px; padding: 0 14px; font-size: 13px;">👁️ View Certificate</button>
+              <a href="images/NEC.png" target="_blank" rel="noopener noreferrer" class="btn-cert-link" style="height: 34px; padding: 0 14px; font-size: 13px;">↗️ Full Screen</a>
+            </div>
+          </div>
+          <div>
+            <p style="margin-bottom: 8px;">📜 <strong>NPTEL Certification</strong> · NPTEL / Ministry of Education, Govt. of India · <span class="badge-tag">NPTEL Certified</span> <span class="badge-tag">IIT Coursework</span></p>
+            <div style="display: flex; gap: 10px; margin-top: 6px;">
+              <button type="button" class="btn-cert-view btn-open-cert-modal" data-cert-title="NPTEL Certification — Certificate" data-cert-src="images/NPTEL.png" style="height: 34px; padding: 0 14px; font-size: 13px;">👁️ View Certificate</button>
+              <a href="images/NPTEL.png" target="_blank" rel="noopener noreferrer" class="btn-cert-link" style="height: 34px; padding: 0 14px; font-size: 13px;">↗️ Full Screen</a>
+            </div>
+          </div>
         </div>
 
         <div class="detail-section">
@@ -153,6 +165,22 @@
       </div>
       <div class="modal-body">
         <iframe src="CV-1.pdf" title="Devika V P Resume PDF Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- 📜 CERTIFICATE PREVIEW MODAL -->
+  <div class="modal-overlay" id="certModal" aria-hidden="true">
+    <div class="modal-container cert-modal-container">
+      <div class="modal-header">
+        <h3 id="certModalTitle">Certificate Preview</h3>
+        <div class="modal-header-actions">
+          <a href="#" id="certModalDownload" target="_blank" rel="noopener noreferrer" class="btn-modal-action">↗️ Open Full Image</a>
+          <button class="modal-close-btn" id="closeCertModal" type="button" aria-label="Close certificate preview">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body cert-modal-body">
+        <img src="" id="certModalImg" alt="Certificate Preview">
       </div>
     </div>
   </div>

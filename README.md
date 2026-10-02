@@ -2,7 +2,7 @@
 
 > **Personal developer portfolio showcasing web applications, Python/Flask projects, AI/ML tools, QA testing experience, and academic achievements.**
 
-![Portfolio Banner](html/images/Avatar.jpg)
+![Portfolio Banner](html/images/profile.png)
 
 ## 📌 GitHub Repository Description (Copy & Paste)
 
